@@ -3,7 +3,7 @@ function caesarCipher(s: string, k: number) {
     const splitedAlphabet = alphabet.split('');
   
     for (let i = 0; i < k; i += 1) {
-      splitedAlphabet.push(splitedAlphabet[0]);
+      splitedAlphabet.push(splitedAlphabet[i]);
       splitedAlphabet.shift();
     }
   
